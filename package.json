@@ -1,0 +1,12 @@
+{
+  "name": "ReactiveTrader",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.8.10",
+    "webpack": "^1.4.13"
+  }
+}
