@@ -15,7 +15,8 @@ module.exports = {
         //    }
         //],
         loaders: [
-            { test: /\.scss/, loader: "style!css!autoprefixer!sass?outputStyle=expanded" }
+            { test: /\.scss/, loader: "style!css!autoprefixer!sass?outputStyle=expanded" },
+            { test: /\.js$/, loader: "transform/cacheable?brfs" } // https://github.com/webpack/transform-loader
         ]
     },
     plugins: [

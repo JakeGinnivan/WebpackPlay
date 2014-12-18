@@ -1,1 +1,5 @@
-document.write("It works...");
+var tiles = require('./spotTiles');
+
+window.onload = function(){
+    tiles.write();
+};
