@@ -2,6 +2,8 @@ var tile = require('./spotTile');
 
 module.exports = {
     write: function (){
-        tile.write();
+        var element = document.createElement('div');
+        document.body.appendChild(element);
+        tile(element, 'eurusd');
     }
 }

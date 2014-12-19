@@ -1,10 +1,14 @@
 module.exports = {
     entry: ["./src/app.js"],
+    devtool: "#inline-source-map",
     output: {
         path: __dirname + '/dist',
         publicPath: 'dist/',
         filename: "app.bundle.js",
         hot: false
+    },
+    externals: {
+        "knockout": "ko"
     },
     module: {
         //preLoaders: [
